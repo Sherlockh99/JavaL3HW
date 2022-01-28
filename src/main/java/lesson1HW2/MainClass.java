@@ -1,6 +1,7 @@
 package lesson1HW2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainClass {
 
@@ -14,10 +15,12 @@ public class MainClass {
     }
 
     public static <T> ArrayList<T> arrayToArrayList(T[] array){
+        return new ArrayList<T>(Arrays.asList(array));
+        /*
         ArrayList<T> result = new ArrayList<>(array.length);
         for (T t : array) {
             result.add(t);
         }
-        return result;
+        return result;*/
     }
 }
