@@ -3,7 +3,7 @@ package lesson4;
 public class ABC {
     static Object mon = new Object();
     static volatile char currentChar = 'A';
-    static final int num = 3;
+    static final int num = 5;
 
 
     public static void main(String[] args) {
