@@ -1,7 +1,10 @@
 package lesson1HW1;
 
 import java.util.Arrays;
-
+/**
+ * 1. Написать метод, который меняет два элемента массива местами
+ * (массив может быть любого ссылочного типа);
+ */
 public class MainClass {
 
     public static void main(String[] args) {

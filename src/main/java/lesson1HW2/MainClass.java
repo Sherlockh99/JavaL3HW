@@ -3,6 +3,9 @@ package lesson1HW2;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+2.Написать метод, который преобразует массив в ArrayList;
+ */
 public class MainClass {
 
     public static void main(String[] args) {
@@ -16,11 +19,5 @@ public class MainClass {
 
     public static <T> ArrayList<T> arrayToArrayList(T[] array){
         return new ArrayList<T>(Arrays.asList(array));
-        /*
-        ArrayList<T> result = new ArrayList<>(array.length);
-        for (T t : array) {
-            result.add(t);
-        }
-        return result;*/
     }
 }

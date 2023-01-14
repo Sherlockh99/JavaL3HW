@@ -6,6 +6,15 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Semaphore;
 
+/**
+ *Организуем гонки:
+ * Все участники должны стартовать одновременно, несмотря на то,
+ * что на подготовку у каждого из них уходит разное время.
+ * В туннель не может заехать одновременно больше половины участников (условность).
+ * Попробуйте всё это синхронизировать.
+ * Только после того как все завершат гонку, нужно выдать объявление об окончании.
+ */
+
 public class MainClass {
     public static final int CARS_COUNT = 4;
     public static Car firstPlace;
@@ -35,6 +44,5 @@ public class MainClass {
         cd3.await();
         System.out.println("Победитель: " + firstPlace.getName());
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
-
     }
 }
